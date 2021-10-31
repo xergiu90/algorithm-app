@@ -1,0 +1,9 @@
+<div class="details" *ngIf="currentAlgorithmDetails">
+  <div>Hyper Parameters</div>
+  <mat-list>
+    <mat-list-item *ngFor="let hyperParam of currentAlgorithmDetails.hyperParameters">
+      <div fxFlex="50">{{hyperParam.paramName}}</div>
+      <div fxFlex="50">{{hyperParam.paramValue}}</div>
+    </mat-list-item>
+  </mat-list>
+</div>

@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+mat-row{
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(odd) {
+    background: darkgrey;
+  }
+
+  &.active {
+    background: lightslategrey;
+  }
+}
